@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="김현수 - 데이터베이스와 NLP를 좋아하는 컴퓨터공학 학사">
+  <meta name="keywords" content="김현수, 컴공, 데이터베이스, NLP, 포트폴리오">
+  <meta property="og:title" content="김현수 - 포트폴리오">
+  <meta property="og:description" content="데이터베이스와 NLP를 좋아하는 컴퓨터공학 학사의 포트폴리오">
+  <meta property="og:type" content="website">
+
+  <title>김현수 - 포트폴리오</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563eb',
+            secondary: '#1f2937',
+            accent: '#14b8a6',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="font-sans antialiased bg-white text-gray-900">
+
+  <!-- ===== Navigation Bar ===== -->
+  <nav id="navbar" class="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-md z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="flex items-center justify-between h-16">
+        <!-- 로고/이름 -->
+        <a href="#hero" class="text-2xl font-bold text-gray-900 hover:text-primary transition-colors">
+          김현수
+        </a>
+
+        <!-- 데스크톱 메뉴 -->
+        <ul class="hidden md:flex space-x-8">
+          <li><a href="#about" class="nav-link text-gray-700 hover:text-primary transition-colors">About</a></li>
+          <li><a href="#skills" class="nav-link text-gray-700 hover:text-primary transition-colors">Skills</a></li>
+          <li><a href="#projects" class="nav-link text-gray-700 hover:text-primary transition-colors">Projects</a></li>
+          <li><a href="#contact" class="nav-link text-gray-700 hover:text-primary transition-colors">Contact</a></li>
+        </ul>
+
+        <!-- 모바일 햄버거 버튼 -->
+        <button id="mobile-menu-btn" class="md:hidden focus:outline-none" aria-label="모바일 메뉴 열기">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- 모바일 메뉴 -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-gray-200">
+        <a href="#about" class="nav-link block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors">About</a>
+        <a href="#skills" class="nav-link block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors">Skills</a>
+        <a href="#projects" class="nav-link block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors">Projects</a>
+        <a href="#contact" class="nav-link block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- ===== Hero Section ===== -->
+    <section id="hero" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 pt-16">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <div class="text-center fade-in">
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-4">
+            김현수
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-700 mb-2">
+            컴공 학사
+          </p>
+          <p class="text-lg md:text-xl text-gray-600 mb-8">
+            데이터베이스, NLP를 좋아하는 학사
+          </p>
+
+          <!-- CTA 버튼들 -->
+          <div class="flex flex-col md:flex-row gap-4 justify-center">
+            <a href="#contact" class="inline-block px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105">
+              연락하기
+            </a>
+            <a href="#projects" class="inline-block px-8 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-blue-50 transition-colors duration-300 transform hover:scale-105">
+              프로젝트 보기
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-12">
+          About Me
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- 아바타 -->
+          <div class="flex justify-center md:justify-start fade-in">
+            <div class="w-64 h-64 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+              <span class="text-6xl">👨‍💻</span>
+            </div>
+          </div>
+
+          <!-- 소개 텍스트 -->
+          <div class="fade-in">
+            <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+              안녕하세요! 저는 데이터베이스와 NLP(자연어 처리)에 관심이 있는 컴퓨터공학 학사입니다.
+            </p>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              데이터 기반의 문제 해결과 대규모 데이터 처리에 흥미를 가지고 있으며,
+              지속적으로 새로운 기술을 습득하고 실제 프로젝트에 적용하려고 노력하고 있습니다.
+            </p>
+
+            <!-- 관심사 태그 -->
+            <div class="flex flex-wrap gap-3">
+              <span class="inline-block px-4 py-2 bg-blue-100 text-primary font-semibold rounded-full text-sm">
+                💾 데이터베이스
+              </span>
+              <span class="inline-block px-4 py-2 bg-indigo-100 text-indigo-700 font-semibold rounded-full text-sm">
+                🗣️ NLP
+              </span>
+              <span class="inline-block px-4 py-2 bg-teal-100 text-accent font-semibold rounded-full text-sm">
+                🤖 머신러닝
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills Section ===== -->
+    <section id="skills" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-12">
+          Skills
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Python -->
+          <div class="fade-in bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="text-6xl mb-4">🐍</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Python</h3>
+            <p class="text-gray-600 leading-relaxed">
+              데이터 분석, 머신러닝, 백엔드 개발 등 다양한 분야에서 활용하고 있습니다.
+            </p>
+          </div>
+
+          <!-- Ubuntu -->
+          <div class="fade-in bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="text-6xl mb-4">🐧</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Ubuntu</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Linux 환경에서 개발하고 서버를 관리하는 데 익숙합니다.
+            </p>
+          </div>
+
+          <!-- C -->
+          <div class="fade-in bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <div class="text-6xl mb-4">⚙️</div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">C</h3>
+            <p class="text-gray-600 leading-relaxed">
+              시스템 프로그래밍과 알고리즘 문제 해결에 사용하고 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects Section ===== -->
+    <section id="projects" class="py-20 bg-white">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-12">
+          Projects
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- 프로젝트 1 -->
+          <div class="fade-in bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+            <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+              <span class="text-5xl">📊</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">데이터베이스 설계</h3>
+              <p class="text-gray-600 mb-4">
+                관계형 데이터베이스 모델링 및 쿼리 최적화 프로젝트입니다.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs font-semibold bg-blue-100 text-primary px-3 py-1 rounded-full">
+                  SQL
+                </span>
+                <span class="text-xs font-semibold bg-blue-100 text-primary px-3 py-1 rounded-full">
+                  Database
+                </span>
+              </div>
+              <a href="#" class="text-primary hover:text-blue-700 font-semibold transition-colors">
+                자세히 보기 →
+              </a>
+            </div>
+          </div>
+
+          <!-- 프로젝트 2 -->
+          <div class="fade-in bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+            <div class="h-48 bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center">
+              <span class="text-5xl">🗣️</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">감정 분석 모델</h3>
+              <p class="text-gray-600 mb-4">
+                자연어 처리를 활용한 텍스트 감정 분류 머신러닝 모델입니다.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs font-semibold bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full">
+                  NLP
+                </span>
+                <span class="text-xs font-semibold bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full">
+                  Python
+                </span>
+              </div>
+              <a href="#" class="text-primary hover:text-blue-700 font-semibold transition-colors">
+                자세히 보기 →
+              </a>
+            </div>
+          </div>
+
+          <!-- 프로젝트 3 -->
+          <div class="fade-in bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+            <div class="h-48 bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center">
+              <span class="text-5xl">🔍</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">검색 엔진 최적화</h3>
+              <p class="text-gray-600 mb-4">
+                대규모 데이터 인덱싱 및 검색 알고리즘 구현 프로젝트입니다.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs font-semibold bg-teal-100 text-accent px-3 py-1 rounded-full">
+                  C
+                </span>
+                <span class="text-xs font-semibold bg-teal-100 text-accent px-3 py-1 rounded-full">
+                  Algorithm
+                </span>
+              </div>
+              <a href="#" class="text-primary hover:text-blue-700 font-semibold transition-colors">
+                자세히 보기 →
+              </a>
+            </div>
+          </div>
+
+          <!-- 프로젝트 4 -->
+          <div class="fade-in bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+            <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+              <span class="text-5xl">📈</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">데이터 시각화</h3>
+              <p class="text-gray-600 mb-4">
+                복잡한 데이터를 직관적인 시각화로 표현하는 프로젝트입니다.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs font-semibold bg-purple-100 text-purple-700 px-3 py-1 rounded-full">
+                  Python
+                </span>
+                <span class="text-xs font-semibold bg-purple-100 text-purple-700 px-3 py-1 rounded-full">
+                  Visualization
+                </span>
+              </div>
+              <a href="#" class="text-primary hover:text-blue-700 font-semibold transition-colors">
+                자세히 보기 →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <div class="text-center fade-in">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Get In Touch
+          </h2>
+          <p class="text-xl text-gray-700 mb-12">
+            프로젝트 협업이나 문의사항이 있으시면 언제든 연락주세요.
+          </p>
+
+          <!-- 이메일 -->
+          <div class="bg-white rounded-lg shadow-lg p-8 max-w-md mx-auto">
+            <a href="mailto:abcd@gmail.com" class="inline-flex items-center gap-2 text-2xl font-semibold text-primary hover:text-blue-700 transition-colors mb-6">
+              📧 abcd@gmail.com
+            </a>
+
+            <button id="copy-email-btn" class="w-full px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300">
+              이메일 복사
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 mb-4 md:mb-0">
+          © 2026 김현수. All rights reserved.
+        </p>
+
+        <!-- 소셜 링크 (선택사항) -->
+        <div class="flex gap-6">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub 프로필" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn 프로필" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
